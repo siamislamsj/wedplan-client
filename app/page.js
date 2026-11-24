@@ -223,7 +223,7 @@ export default function Home() {
               text: "Check back soon, vendors are adding new services.",
             }}
           >
-            <div className="grid items-start gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid items-start gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:[&>*:nth-child(3n+2)]:mt-12">
               {featured.data?.map((s, i) => (
                 <Reveal
                   key={s._id}
